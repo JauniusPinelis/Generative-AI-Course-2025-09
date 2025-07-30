@@ -31,22 +31,29 @@
 - Intro Data Handling: `numpy` arrays, file I/O.
 - **Lab:** Fetch & process API data; optional file saving.
 
-### **Day 5: Project - Weather & News Dashboard**
+### **Day 5: Introduction to APIs & Basic Application Building**
 - API Concepts: REST, API keys.
-- App Structure: CLI design, error handling, user experience.
-- **Project:** Build a CLI dashboard that fetches and displays weather forecasts, latest news headlines, and fun facts using public APIs. Include data persistence and user location preferences.
+- App Structure: CLI design.
+- **Lab:** Build CLI app calling API based on user input.
 
 ---
 
-## **Week 2: Introduction to Generative AI & LLM Integration**
+## **Week 2: Introduction to Generative AI & API Integration**
 
 ### **Day 1: What Is Generative AI?**
 - Definition, history, concepts (LLMs, prompts, tokens).
-- Major models/players (OpenAI, Google, Anthropic).
-- Ethics: Bias, misuse, responsible AI usage.
-- Demo: Text/image generation (ChatGPT, Claude).
+- Major models/players (OpenAI, Google).
+- Ethics: Bias, misuse.
+- Demo: Text/image generation (ChatGPT, Midjourney).
 
-### **Day 2: Working with OpenAI's GPT APIs**
+### **Day 2: REST APIs & Introduction to FastAPI**
+- RESTful API review.
+- Intro FastAPI: Features, setup (`uvicorn`).
+- Path Operations: Routes (`@app.get`/`@app.post`), path/query params.
+- Request Body: Pydantic validation.
+- **Lab:** Simple FastAPI "Hello World" API; explore Swagger UI.
+
+### **Day 3: Working with OpenAI's GPT APIs**
 - OpenAI Platform: Models (GPT-4/3.5), pricing.
 - API Key Management & Security.
 - OpenAI Python Library: Install (`uv add openai`), usage.
@@ -54,26 +61,19 @@
 - Key Params: `model`, `messages`, `temperature`, `max_tokens`.
 - **Lab:** Python script using GPT API for prompts/responses.
 
-### **Day 3: Advanced OpenAI Features & Prompting**
+### **Day 4: OpenAI Models: Capabilities, Limitations & Prompting**
 - Model Capabilities/Limitations (cutoff, hallucinations).
-- Prompt Engineering: Context, format, zero/few-shot.
-- System prompts and role-based conversations.
-- Tools/Function Calling: Basics and implementation.
-- **Lab:** Experiment with prompt engineering and function calling.
+- Prompt Engineering Basics: Context, format, zero/few-shot.
+- Intro: Tools/Function Calling.
+- Intro: Assistants API (stateful).
+- **Lab:** Experiment with prompt engineering; optional function calling.
 
-### **Day 4: OpenAI Assistants API & Stateful Conversations**
-- Assistants API: Stateful conversations, persistent threads.
-- Creating assistants with instructions and tools.
-- Thread management and message handling.
-- File uploads and code interpreter.
-- **Lab:** Build a stateful assistant using the Assistants API.
-
-### **Day 5: Project - Intelligent Personal Assistant**
-- Application Architecture: CLI vs GUI approaches.
-- Conversation history management.
-- Cost optimization strategies.
-- Error handling and rate limiting.
-- **Project:** Build an intelligent personal assistant with conversation memory, function calling capabilities (calendar, reminders, web search), and persistent chat history across sessions.
+### **Day 5: Integrating OpenAI with FastAPI**
+- App Structure: FastAPI + OpenAI.
+- Secure API Key Handling: Env vars (`python-dotenv`).
+- API Endpoint (`/generate`): Takes prompt, calls OpenAI.
+- Return Response: JSON format.
+- **Lab:** FastAPI endpoint taking prompt, calling OpenAI, returning response.
 
 ---
 
@@ -111,11 +111,11 @@
 - Workflow: Input -> History -> API call -> Display -> History.
 - **Lab:** Simple Streamlit chatbot using `st.session_state` & Gemini API.
 
-### **Day 5: Project - Interactive AI Content Generator**
-- Combine Gemini API with Streamlit for a polished UI.
-- Multi-modal content generation (text, creative writing, analysis).
-- Interactive features: real-time streaming, chat history, export options.
-- **Project:** Build a comprehensive Streamlit app that generates various content types (stories, summaries, analysis) with an intuitive UI, chat history, and content export functionality.
+### **Day 5: Project Work & Review**
+- Project work time.
+- Instructor Q&A.
+- Review Week 3: Gemini API, Streamlit, state management.
+- Discussion: Challenges, ideas.
 
 ---
 
@@ -147,11 +147,11 @@
 - Retrieval Techniques: MMR, metadata filtering, compression.
 - **Lab:** Experiment with splitting/retrieval methods in LangChain RAG.
 
-### **Day 5: Project - Document Intelligence Assistant**
+### **Day 5: Integrating RAG with Streamlit**
 - Combine Weeks 3 & 4: Streamlit UI for RAG.
 - Workflow: Streamlit input -> RAG Chain -> Streamlit output.
 - State Handling: `st.session_state` for RAG chat history.
-- **Project:** Build a document intelligence assistant that can ingest PDFs, websites, and text files, then answer questions with source citations, summary generation, and conversation history.
+- **Lab:** Streamlit app using RAG pipeline for Q&A on docs (show answer & context).
 
 ---
 
@@ -177,7 +177,7 @@
 - Connect to running Ollama instance.
 - Generate text/chat via library.
 - Streaming responses.
-- Integrate local models into Python apps (CLI/Streamlit).
+- Integrate local models into Python apps (FastAPI/Streamlit).
 - **Lab:** Python script using `ollama` lib to interact with local model.
 
 ### **Day 4: Fine-Tuning Theory**
@@ -186,13 +186,14 @@
 - Full vs. PEFT: Concepts, pros/cons.
 - Data Prep: Instruction datasets (prompt/response).
 
-### **Day 5: Project - Custom Domain Expert Model**
+### **Day 5: Fine-Tuning in Action with Unsloth & Kaggle/Colab**
 - Unsloth: Faster LoRA/QLoRA fine-tuning library.
 - Environment: Kaggle/Colab GPUs.
 - Data Formatting: HuggingFace dataset selection.
 - Fine-tuning Script: Unsloth + `transformers` SFTTrainer.
-- Model evaluation and comparison with base model.
-- **Project:** Fine-tune a specialized model for a chosen domain (customer service, coding assistant, creative writing) and build a comparison interface to demonstrate the improvements over the base model.
+- Running the job.
+- Basic inference/testing.
+- **Lab:** Fine-tune small OS model (e.g., Mistral-7B) using Unsloth on Kaggle/Colab.
 
 ---
 
@@ -222,11 +223,11 @@
 - APIs/Libraries for audio.
 - **Lab:** Use Whisper API/lib for transcription; TTS API/lib for speech generation.
 
-### **Day 5: Project - Multimodal AI Assistant**
-- Integrating Vision, Audio, and Text capabilities.
-- Streamlit app with file upload for images, audio, and documents.
-- Multi-modal reasoning and cross-modal interactions.
-- **Project:** Build a comprehensive multimodal assistant that can analyze images, transcribe/respond to audio, generate images from descriptions, and handle text-vision reasoning tasks in one unified interface.
+### **Day 5: Project - Vision Analysis Application**
+- Integrating Vision Models: Simple app using vision.
+- Idea: Streamlit app for image upload -> analysis -> display.
+- Project work time & Q&A.
+- **Lab:** Build basic app (CLI/Streamlit) with vision analysis.
 
 ---
 
@@ -261,49 +262,46 @@
 - Compatibility: OpenAI Chat Completions format.
 - **Lab:** Install SDK (`uv add openai-agents`), run examples (hello world, tool, handoffs).
 
-### **Day 5: Project - Autonomous Research Assistant**
-- Goal: Agent researches topics and creates comprehensive reports.
-- Components: LLM, Agent Framework, Multiple Tools (search, scraping, analysis).
-- Advanced features: Source verification, fact-checking, citation generation.
-- **Project:** Build an autonomous research assistant that can research any topic, verify information across multiple sources, and generate comprehensive reports with proper citations and analysis.
+### **Day 5: Project - Simple Research Agent**
+- Goal: Agent researches topic using web search tool.
+- Components: LLM, Agent Framework, Search Tool.
+- Workflow: Prompt -> Plan -> Search -> Synthesize -> Response.
+- **Lab:** Implement basic research agent (LangChain/Assistants) + search tool.
 
 ---
 
-## **Week 8: AI Agent Testing, Evaluation & Production Deployment**
+## **Week 8: Enterprise System Development with Python and FastAPI**
 
-### **Day 1: LLM & Agent Evaluation Fundamentals**
-- Beyond Traditional Metrics: Moving past BLEU/ROUGE to holistic evaluation.
-- Agent-Specific Metrics: Planning accuracy, tool use success, reasoning quality.
-- Evaluation Frameworks: HELM, LM-evaluation-harness, custom benchmarks.
-- Human vs. Automated Evaluation: When to use expert review vs automated scoring.
-- **Lab:** Set up comprehensive evaluation pipelines for LLM applications using multiple metrics.
+### **Day 1: Advanced FastAPI & REST API Standards**
+- FastAPI Recap: Dependency Injection, Background Tasks, Routers.
+- REST Design Principles: Naming, methods, status codes, HATEOAS.
+- **Lab:** Refactor FastAPI examples using `APIRouter`.
 
-### **Day 2: Adversarial Testing & Robustness Evaluation**
-- Adversarial Prompts: Jailbreaking, prompt injection, red-teaming techniques.
-- Robustness Testing: Edge cases, out-of-distribution inputs, stress testing.
-- Safety Evaluation: Harmful output detection, bias measurement, fairness testing.
-- Automated Red-Teaming: Tools and frameworks for systematic adversarial testing.
-- **Lab:** Build automated adversarial test suites and evaluate model robustness against attacks.
+### **Day 2: Database Integration with MongoDB & FastAPI**
+- NoSQL Intro: Document DBs (MongoDB).
+- MongoDB Basics: Docs, Collections, CRUD.
+- Integration: FastAPI + `PyMongo`.
+- Mapping: Pydantic <-> MongoDB.
+- Async DB operations.
+- **Lab:** Connect FastAPI to MongoDB; implement CRUD for a resource.
 
-### **Day 3: Domain-Specific & Real-World Evaluation**
-- Domain Expertise Testing: Medical, legal, financial accuracy evaluation.
-- Real-World Performance Metrics: User satisfaction, task completion, ROI measurement.
-- A/B Testing for AI: Comparing model performance in production environments.
-- Cost-Efficiency Analysis: Balancing accuracy with computational and financial costs.
-- **Lab:** Design domain-specific evaluation benchmarks and conduct A/B testing simulations.
+### **Day 3: Automated Testing with Pytest**
+- Importance of Testing.
+- Testing Pyramid: Unit, Integration, E2E.
+- Intro `pytest`: Functions, assertions, fixtures.
+- Unit Testing: Service layer, utils.
+- Integration Testing: Layer interactions (Service + Repo).
+- Endpoint Testing: `TestClient` for simulated HTTP.
+- **Lab:** Write unit & integration/endpoint tests using `pytest` & `TestClient`.
 
-### **Day 4: Agent Interpretability & Error Analysis**
-- Explainability Testing: Understanding agent decision-making processes.
-- Error Pattern Analysis: Systematic failure mode identification and categorization.
-- Hallucination Detection: Measuring and mitigating factual inaccuracies.
-- Agent Introspection: Self-reflection and confidence calibration evaluation.
-- **Lab:** Implement interpretability tools and conduct systematic error analysis on agent outputs.
+### **Day 4: Containerization with Docker & Basic AWS Deployment**
+- Intro Docker: Containers vs. VMs, `Dockerfile` basics.
+- Containerizing FastAPI: `Dockerfile`, build images.
+- Docker Compose: Multi-container setups (app + DB).
+- Cloud Concepts: AWS services (EC2, ECR, RDS/DocDB, ECS/Fargate).
+- Basic Deployment: Push to ECR, run on EC2/App Runner.
+- **Lab:** Create `Dockerfile`, build image, optionally run locally; discuss basic AWS deployment.
 
-### **Day 5: Project - AI System Evaluation Dashboard**
-- Production Monitoring: Real-time evaluation metrics, alerting systems.
-- Evaluation Pipeline Design: Automated testing, continuous evaluation, reporting.
-- Multi-Model Comparison: Benchmarking different models and approaches.
-- Quality Assurance Framework: Establishing evaluation standards for AI deployment.
-- **Project:** Build a comprehensive AI evaluation dashboard that monitors model performance, detects issues, and provides actionable insights for improvement.
-
----
+### **Day 5: Recap and steps for further learning**
+- **Recap:** Review key concepts (Python, FastAPI, DBs, Docker, Cloud Basics).
+- **Further Learning Suggestions for AI Engineers:**
