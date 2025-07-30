@@ -21,9 +21,13 @@ Day 3
 
 Day 4
 - The prompting techniques.
+- Context clears
+- Instructions
 - One shot vs Few shot prompting
 - Chain of thought technique.
 - Working with files of text.
+- LLMS are expensive
+- Practical tips to for using ChatGPT
 
 Week 2: ChatGPt alternatives
 
@@ -44,7 +48,7 @@ Day 3 Open source llms
 - What are the requirements to have them run locally.
 - Hugging face ecosystem.
 
-Day 4 Ollama
+Day 4 Run open-source models with Ollama
 - Downloading and installing Ollama from https://ollama.com/
 - Runing open source models on your computer.
 - The business applications on open-source models
@@ -72,3 +76,32 @@ Day 4 Vibe coding and API practice.
     - Create a website which shows the weather forecast and the selected coordinates.
     - System analysis
     - Front-end and Backend.
+
+
+Week 4: GenAI in IT
+
+    Day 1: Sofware building AI as a service
+    -  Api Recap
+    -  Tecnology as a service
+    -  creating apps with Lovable.AI
+    -  Builder.AI scandal
+  
+    Day 2: The rise of Model Context Protocol (MCP)
+    - What is MCP
+    - Why is MCP needed?
+    - MCP gives us tools
+    - Technology is becoming 'LLM friendly'
+    - The influence of Anthropic to the AI ecosystem.
+  
+    Day 3: Intro to databases
+    - Install Postgre database
+    - Postgre UI vs Server
+    - Running Postgre
+    - Relational databases
+    - Data vs Schema
+
+    Day 4: Empowering LLM with MCP tools
+    - Browse various tool in https://smithery.ai/
+    - Empower Visual studio with Context7 mcp
+    - Postgre MCP analysis
+    - Pitsfals and security concerns of MCPs
