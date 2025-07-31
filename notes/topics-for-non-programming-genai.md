@@ -141,64 +141,89 @@ Week 6: AI agents and automation
 Day 1: No Code/Low Code platforms
 - Introduction to n8n
 - Building your own RAG with no-code in n8n
-- n8n integrations with differents services.
+- n8n integrations with different services
 
 Day 2: Introduction to AI agents
 - What is an AI agent
 - 2025 is the year of AI agents
-- Why business require the AI agents.
-- The needs for 'AI engineer'
+- Why businesses require AI agents
+- The need for 'AI engineers'
 - LLM vs AI agent?
 - AI agents vs AI systems
 
 Day 3: OpenAI agent SDK
-- Intro to AI agents frameworks.
-- Why are they needed.
-- Analyzing and building a 'deep research' agent with openai agent sdk.
+- Intro to AI agent frameworks
+- Why are they needed
+- Analyzing and building a 'deep research' agent with OpenAI agent SDK
 
-Day4 : (Practice) Data analyst agent
-- Postgre database recap
+Day 4: (Practice) Data analyst agent
+- PostgreSQL database recap
 - Restoring a sample database
 - Building a Streamlit agent which is able to analyse the database on natural language queries
 
 Week 7: Training (fine-tuning) your own model
 
 Day 1: Training model theory
-  - Training from scratch is super complex.
-  - Fine-tuning is a better option.
-  - Why and when fine-tune
-  - Fine-tuning vs RAG
-  - The challenges of fine-tuning.
-  - Base vs Instructions models.
-  - HuggingFace intro
+- Training from scratch is super complex
+- Fine-tuning is a better option
+- Why and when to fine-tune
+- Fine-tuning vs RAG
+- The challenges of fine-tuning
+- Base vs Instruction models
+- HuggingFace intro
 
 Day 2: Preparation for fine-tuning
-  - Hugging face analysis
-  - Datasets
-  - Model classifications
-  - Ollama recap and why is it needed.
-  - Google notebooks and the need of GPU
+- Hugging Face analysis
+- Datasets
+- Model classifications
+- Ollama recap and why it is needed
+- Google notebooks and the need for GPU
 
-Day 3 Finetuning demo
-  - Fine-tuning as a service in OpenAI
-  - Unsloth framework
-  - Unsloth the documentation
-  - Choosing the right model for fine-tuning.
-  - Finetuning LLama3.2
-  - Testing the fine-tuned model
-  - Launching the fine-tuned model with Ollama.
-  
-Day 4 finetuning-practice  
-  - Modification of the dataset.
-  - Fine-tuning practice with Unsloth framework
-  - new model upload to HuggingFace
-  
+Day 3: Fine-tuning demo
+- Fine-tuning as a service in OpenAI
+- Unsloth framework
+- Unsloth documentation
+- Choosing the right model for fine-tuning
+- Fine-tuning Llama 3.2
+- Testing the fine-tuned model
+- Launching the fine-tuned model with Ollama
 
-Week 8 Multimodal models
+Day 4: Fine-tuning practice
+- Modification of the dataset
+- Fine-tuning practice with Unsloth framework
+- New model upload to HuggingFace
 
-Day 1 Vision analysis and image generation
+Week 8: Multimodal models
 
-Day 2 Voice generation agents
+Day 1: Vision analysis and image generation
+- What are multimodal models
+- Computer vision basics
+- Image analysis with GPT-4 Vision
+- Image generation with DALL-E and Midjourney
+- Practical applications of vision AI
+- Building image analysis applications
 
+Day 2: Voice and audio processing
+- Text-to-speech (TTS) technology
+- Speech-to-text (STT) technology
+- Voice cloning and synthesis
+- OpenAI's voice models
+- ElevenLabs for voice generation
+- Building voice-enabled applications
+- Audio content generation
 
+Day 3: Video processing and analysis
+- Video analysis with AI
+- Video generation tools
+- Sora, Veo3 and other video AI platforms
+- Automated video editing
+- Creating educational content with AI
+- Video transcription and summarization
 
+Day 4: Advanced multimodal applications
+- Combining text, image, and voice
+- Building comprehensive multimodal assistants
+- Document processing with vision models
+- Real-world multimodal use cases
+- Future of multimodal AI
+- Course recap and next steps
