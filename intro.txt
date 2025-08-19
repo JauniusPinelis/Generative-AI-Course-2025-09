@@ -1,22 +1,24 @@
-- The course is provided by a working GEN-AI engineer professional who is currently working as a senior GEN-AI developer in Danske Bank.
-- The course focuses goes way beyond 'prompting with chatgpt' and goes deeper into understanding what is gen-ai technology and how can be integrated into business case.
-- We will not go into programming but we will focus on building prototypes and projects. We will use tools like Copilot, Claude Code, Lovable and n8n to build our own prototypes and solutions.
-- The aim of this course is to understand the concepts and techniques behing generative AI, be able to understand how the current AI solutions work 
-and  most important be able to implement your own ideas.
-- Most of the lectures are based on practicality and building and we will building the following:
-  - chatbot which is expert in a particular domain (based on RAG)
-  - An application which will recognise food products in photos using vision.
-  - An AI agent which is able to make its own decisions based on data and business rules.
-  - Build a database analyst which is able to connect and query database based on natural language (Postgre MCP)
-  - Train (fine-tune) a Large language model to get additional information and behaviour.
-  - Implement an AI automation using no-code solution (n8n)
-  - Build and analyse a multi-agent workflow.
+Generative AI is a vast technology that has changed the world and yet is changing.
+We probs have all used and have been impressed by chatgpt, but there is much more to generative AI as technology.
+It changing very fields and seems to be a threat how we work and even that it may be able to replace us in the work environment.
 
-- We will cover many other niece topics:
-    - Uncensored models with Venice.AI
-    - Image analysis with Open source models
-    - Video generation using Veo3
-    - Voice cloning and Audio generation.
+However, i welcome you to see not a threat but an opportunity. 
+Lots of my fellow developers feel threatened as they see so many great tools which can replace them but they ignore how many new opportunities appear.
+IT industry has been stagnating for at least several years and only now the companies started building AI agents and integrate them into the processes.
+We see now more and more 'AI startups' happening, investments being poured into them and the demand for 'AI engineers' ->
+IT professionals who are capable to integrate Generative  AI technology into their existing processes and systems.
 
-The course is mostly suited for Tech-savy IT or business professional who want to understand Generative AI better, 
-especially for those who are need skillset and guidance how to integrated AI in their workflow..
+This is not the first course, but how this course is different is that we skip learning 'Python programming' 
+and focus directly on understanding GEN-AI concepts and building the prototypes and products. We will utilise not only the automation platforms 
+but also Agentic Coding tools such as Cursor and Claude Code. The programming experience helps here a lot but it is not necessary as we allow the tools to do the basic Coding
+and i will tech you 'agentic coding' techniques to build and deploy the minimal products easier.
+
+By end on the course you will understand most of the recent developments and techniques that happen right now in generative AI.
+The course is intense and technical, but this will allow you to understand how many production 'AI products' work 
+and u will have experience to start implementing GEN-AI ideas yourself. 
+The course will cover most of the current trends right now:
+Open source model usage, fine-tuning, mcp, AI agents, Agent building frameworks, techniques to handle hallucinations and etc.
+
+There are very few real experts in generative AI as the technology is still very fresh (remember that chatgpt 3.5 only was launched 2.5 years ago)
+but you will learn from (and learn together) from a person who is actually working with GEN-AI technology in Danske Bank. 
+I will try to keep the course as practical and share the best practices (and failures) of working with GEN-AI professionally.
