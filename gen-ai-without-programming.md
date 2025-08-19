@@ -1,4 +1,4 @@
-**8-Week Comprehensive Course: Mastering Generative AI Technology Without Programming**
+**Generative AI Technology: Building Systems and Agents (No-Code)**
 
 ---
 
