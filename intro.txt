@@ -1,24 +1,25 @@
-Generative AI is a vast technology that has changed the world and yet is changing.
-We probs have all used and have been impressed by chatgpt, but there is much more to generative AI as technology.
-It changing very fields and seems to be a threat how we work and even that it may be able to replace us in the work environment.
+Generative AI is a vast technology that has changed the world and is still changing it.
+We have probably all used and been impressed by ChatGPT, but there is much more to Generative AI as a technology.
+It is changing many fields and can seem like a threat to how we work, even to the point of potentially replacing us in the workplace.
 
-However, i welcome you to see not a threat but an opportunity. 
-Lots of my fellow developers feel threatened as they see so many great tools which can replace them but they ignore how many new opportunities appear.
-IT industry has been stagnating for at least several years and only now the companies started building AI agents and integrate them into the processes.
-We see now more and more 'AI startups' happening, investments being poured into them and the demand for 'AI engineers' ->
-IT professionals who are capable to integrate Generative  AI technology into their existing processes and systems.
+However, I invite you to see it not as a threat but as an opportunity.
+Lots of my fellow developers feel overwhelmed as they see so many great tools that could replace them, 
+but they ignore how many new opportunities appear.
+The IT industry has been stagnating for several years, and only now are companies starting to build AI agents and integrate them into their processes.
+We now see more and more 'AI startups', investments being poured into them, and rising demand for 'AI engineers'—
+IT professionals who are capable of integrating Generative AI technology into their existing processes and systems.
 
-This is not the first course, but how this course is different is that we skip learning 'Python programming' 
-and focus directly on understanding GEN-AI concepts and building the prototypes and products. We will utilise not only the automation platforms 
-but also Agentic Coding tools such as Cursor and Claude Code. The programming experience helps here a lot but it is not necessary as we allow the tools to do the basic Coding
-and i will tech you 'agentic coding' techniques to build and deploy the minimal products easier.
+This is not the first course, but what makes this course different is that we skip learning 'Python programming'
+and focus directly on understanding GEN-AI concepts and building prototypes and products. We will utilise not only automation platforms
+but also agentic coding tools such as Cursor and Claude Code. Programming experience helps a lot, but it is not necessary, as we let the tools handle the basic coding
+and I will teach you 'agentic coding' techniques to build and deploy minimal products without requiring programming knowledge.
 
-By end on the course you will understand most of the recent developments and techniques that happen right now in generative AI.
-The course is intense and technical, but this will allow you to understand how many production 'AI products' work 
-and u will have experience to start implementing GEN-AI ideas yourself. 
-The course will cover most of the current trends right now:
-Open source model usage, fine-tuning, mcp, AI agents, Agent building frameworks, techniques to handle hallucinations and etc.
+By the end of the course you will understand most of the recent developments and techniques that are happening right now in generative AI.
+The course is intense and technical, but it will help you understand how many production 'AI products' work
+and you will have the experience to start implementing GEN-AI ideas yourself.
+The course will cover most of the current trends and buzzwords:
+Open-source model usage, structured output, tool calling, fine-tuning, MCP, AI agents, agent-building frameworks, techniques to handle hallucinations, etc.
 
-There are very few real experts in generative AI as the technology is still very fresh (remember that chatgpt 3.5 only was launched 2.5 years ago)
-but you will learn from (and learn together) from a person who is actually working with GEN-AI technology in Danske Bank. 
-I will try to keep the course as practical and share the best practices (and failures) of working with GEN-AI professionally.
+There are very few real experts in generative AI, as the technology is still very fresh (remember that ChatGPT 3.5 was launched only about 2.5 years ago)
+but you will learn from (and learn together with) a person who is actually working with GEN-AI technology at Danske Bank.
+I will keep the course practical and share the best practices (and failures) of working with GEN-AI professionally.
