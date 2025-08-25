@@ -1,0 +1,21 @@
+What is happening in GenAI 2025 Q2:
+
+https://github.com/JauniusPinelis/Generative-AI-Course-2025-09
+
+0. AI agents are still the buzzwords and hard to navigate. 
+People are starting to report about successful AI agents.
+https://www.youtube.com/watch?v=sn79oS4MZFI&t=5590s
+
+1. Agentic AI coders are becoming a reality and a success.
+https://www.anthropic.com/claude-code
+
+2. IT market is reviving due to companies continue to search for 'AI engineers'.
+AI invades non-IT business areas.
+
+https://lightcast.io/resources/research/beyond-the-buzz-developing-the-ai-skills-employers-actually-need
+
+3. But Gen-ai adoption is hard
+https://www.bcg.com/publications/2025/genai-employee-experience-transformation
+
+5. Huge Potential in Marketing realised.
+https://www.reddit.com/r/singularity/comments/1l2azl6/ulianopolis_city_hall_in_brazil_made_a_complete/
