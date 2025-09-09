@@ -11,3 +11,13 @@
 - Tools into: web search
 - Memory
 - Price of the technology.
+- Installs.
+
+### Day 2
+- Lithuanian language in chatgpt.
+- Chatgpt Vision and Files
+- Prompt engineering
+- Context engineering
+- AI as technology
+- LLM leaderboards
+- Intro to Google ai studio.
