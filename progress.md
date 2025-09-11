@@ -21,3 +21,21 @@
 - AI as technology
 - LLM leaderboards
 - Intro to Google ai studio.
+
+### Day 3 Other platforms
+- Google Gemini
+- Google AI Studio
+- AI as technology
+- AI as technology usage example with Python.
+- Prompt engineering
+- LLM Guard rails and ethics, censor.
+
+### Day 4 AI tools
+    - what news to follow
+    - Claude Anthropic
+    - DeepSeek
+    - Mistral AI
+    tools
+    - Notebook LLM
+    -https://www.perplexity.ai/
+
