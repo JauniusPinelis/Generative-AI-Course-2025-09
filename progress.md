@@ -37,5 +37,18 @@
     - Mistral AI
     tools
     - Notebook LLM
-    -https://www.perplexity.ai/
+    - https://www.perplexity.ai/
+
+## Week 2
+
+### Day 1
+
+   - Building with AI practice
+   - Open source models
+
+### Day 2
+
+    - Github copilot.
+    - Model proxies
+
 

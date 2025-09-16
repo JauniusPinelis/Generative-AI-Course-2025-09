@@ -1,0 +1,27 @@
+1-Day AI Workshop
+
+1. Introduction to ChatGPT and Advanced Usage (2 hours)
+
+    1. How to Use Prompts Efficiently (basic structure, examples, refine) – https://chat.openai.com
+    2. Tools Overview and Efficient Usage (ChatGPT tool intro and usages) – https://platform.openai.com
+    3. ChatGPT Limitations and How to Mitigate Them (hallucinations, context limits, knowledge cutoff date, context engineering)
+    Exercise: Draft a prompt; use web search for one fact; save one preference in memory.
+
+2. Beyond ChatGPT: Other AI Platforms (1 hour)
+
+    1. Google Gemini – multimodal, vision – https://gemini.google.com
+    2. Unrestricted Models with Grok – real‑time-ish, lives in X – https://grok.com
+    3. Create Your Own Application with Lovable.dev – fast AI‑scaffolded apps – https://lovable.dev
+    Exercise: In Lovable.dev, scaffold a one‑page app and preview it.
+
+3. AI Tools (2 hours)
+
+    1. Enhanced Search with Perplexity AI – quick answers + sources – https://www.perplexity.ai
+    2. Document Analysis with Google NotebookLM – load docs & chat over them – https://notebooklm.google
+    3. Image Editing with Nano Banana AI – https://nanobanana.ai
+    Exercise: Create a NotebookLM, add one source document, and ask one question.
+
+4. AI Agents (1 hour)
+
+    1. Build Your Own AI Agent with n8n (no code) – simple workflow builder – https://n8n.io
+    Exercise: Build a simple RAG in n8n: manual trigger -> load a short text file -> answer one question with an LLM using that file.
