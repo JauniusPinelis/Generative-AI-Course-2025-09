@@ -51,4 +51,10 @@
     - Github copilot.
     - Model proxies
 
+### Day 3
+    - Github
+    - Git
+    - API
+    - Streamlit library
+
 
