@@ -57,4 +57,10 @@
     - API
     - Streamlit library
 
+### Day 4
+    - Git Install
+    - Ollama install
+    - Git and github demonstration
+    - Ollama integration.
+
 
