@@ -63,4 +63,14 @@
     - Git and github demonstration
     - Ollama integration.
 
+### Week 3
+
+### Day 1
+    - AI coding tools
+    - Vscode And Github copilot
+    - Cursor
+    - Lovable.dev
+    - Claude code
+    - GPT - 5 Codex.
+    - What to do with these tools.
 
