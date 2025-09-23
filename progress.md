@@ -74,3 +74,15 @@
     - GPT - 5 Codex.
     - What to do with these tools.
 
+### Day 2
+    - AI as expert
+    - Context engineering
+        - It is hard to command AI how to behave precisely.
+        - How to get data for context.
+        - Data can be outdated
+        - Data given can be conflicting.
+        - Context window is limited
+        - The more context we give, the more it costs and the quality reduces
+    - RAG theory
+    - Customer Service chatbot
+
