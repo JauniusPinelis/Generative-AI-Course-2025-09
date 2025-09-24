@@ -86,3 +86,8 @@
     - RAG theory
     - Customer Service chatbot
 
+## Day 3
+    - Recap
+    - Stopped at various AI platforms.
+    - intro to n8n
+
