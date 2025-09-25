@@ -91,3 +91,9 @@
     - Stopped at various AI platforms.
     - intro to n8n
 
+## Day 4
+    - Function calling
+    https://platform.openai.com/docs/guides/function-calling
+    - Tools
+    - Intro to agents.
+
