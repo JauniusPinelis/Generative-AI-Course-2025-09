@@ -97,3 +97,42 @@
     - Tools
     - Intro to agents.
 
+## Week 4
+
+## Day 1
+
+    - to give back the lecture
+
+## Day 2
+    - N8n practice with gmail integration.
+
+## Day 3
+    - RAG practice
+    - simple RAG with n8n
+
+## Day 4
+    - Advanced RAG.
+    - How to improve RAG:
+        - Clean and format the data
+        - Choose a proper vector database
+        - Set splitting settings (what is the best chunking strategy)
+        - Pick the right LLM.
+        - Instructions and prompts
+        - Pick the right embeddings.
+
+    - Understanding n8n better.
+
+### Week 3 MCP
+
+## Day 1
+    - Recap: AI agents
+    - AI agents concepts: instructions, LLM, tools.
+    - Tool is a code.
+    - Technology is an API
+    - n8n vd copilot.
+    - mcp
+
+
+
+
+
