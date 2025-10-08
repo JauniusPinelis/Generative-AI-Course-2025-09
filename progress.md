@@ -131,6 +131,18 @@
     - Technology is an API
     - n8n vd copilot.
     - mcp
+    - Postgre mcp
+
+Day 2
+    - Playwright mcp
+    - browser automation.
+    - Openai Dev day.
+    - embeddings
+    - notebook LLM
+    - n8n
+
+Day 3
+    - multimodal
 
 
 
