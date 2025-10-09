@@ -143,6 +143,9 @@ Day 2
 
 Day 3
     - multimodal
+    - image generation with n8n
+    - Human in the loop.
+
 
 
 
