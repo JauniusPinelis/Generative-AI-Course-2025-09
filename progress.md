@@ -122,7 +122,7 @@
 
     - Understanding n8n better.
 
-### Week 3 MCP
+### Week 5 Multi modal agents.
 
 ## Day 1
     - Recap: AI agents
@@ -146,6 +146,17 @@ Day 3
     - image generation with n8n
     - Human in the loop.
 
+Day 4
+    - human in the loop and image generation in practice.
+
+### Week 6 
+
+    - Day 1 Intro to ElevenLabs
+
+Day 2
+
+    - Multi agent orchestration
+    - Google Sheets integration into n8n.
 
 
 
