@@ -1,6 +1,6 @@
-### Week 1
+## Week 1
 
-## Day 1
+### Day 1
 - Lecturer and course intro.
 - Chatgpt
 - Generative AI vs AI
@@ -31,132 +31,140 @@
 - LLM Guard rails and ethics, censor.
 
 ### Day 4 AI tools
-    - what news to follow
-    - Claude Anthropic
-    - DeepSeek
-    - Mistral AI
-    tools
-    - Notebook LLM
-    - https://www.perplexity.ai/
+- what news to follow
+- Claude Anthropic
+- DeepSeek
+- Mistral AI
+- tools
+- Notebook LLM
+- https://www.perplexity.ai/
 
 ## Week 2
 
 ### Day 1
 
-   - Building with AI practice
-   - Open source models
+- Building with AI practice
+- Open source models
 
 ### Day 2
 
-    - Github copilot.
-    - Model proxies
+- Github copilot.
+- Model proxies
 
 ### Day 3
-    - Github
-    - Git
-    - API
-    - Streamlit library
+- Github
+- Git
+- API
+- Streamlit library
 
 ### Day 4
-    - Git Install
-    - Ollama install
-    - Git and github demonstration
-    - Ollama integration.
+- Git Install
+- Ollama install
+- Git and github demonstration
+- Ollama integration.
 
-### Week 3
+## Week 3
 
 ### Day 1
-    - AI coding tools
-    - Vscode And Github copilot
-    - Cursor
-    - Lovable.dev
-    - Claude code
-    - GPT - 5 Codex.
-    - What to do with these tools.
+- AI coding tools
+- Vscode And Github copilot
+- Cursor
+- Lovable.dev
+- Claude code
+- GPT - 5 Codex.
+- What to do with these tools.
 
 ### Day 2
-    - AI as expert
-    - Context engineering
-        - It is hard to command AI how to behave precisely.
-        - How to get data for context.
-        - Data can be outdated
-        - Data given can be conflicting.
-        - Context window is limited
-        - The more context we give, the more it costs and the quality reduces
-    - RAG theory
-    - Customer Service chatbot
+- AI as expert
+- Context engineering
+    - It is hard to command AI how to behave precisely.
+    - How to get data for context.
+    - Data can be outdated
+    - Data given can be conflicting.
+    - Context window is limited
+    - The more context we give, the more it costs and the quality reduces
+- RAG theory
+- Customer Service chatbot
 
-## Day 3
-    - Recap
-    - Stopped at various AI platforms.
-    - intro to n8n
+### Day 3
+- Recap
+- Stopped at various AI platforms.
+- intro to n8n
 
-## Day 4
-    - Function calling
-    https://platform.openai.com/docs/guides/function-calling
-    - Tools
-    - Intro to agents.
+### Day 4
+- Function calling
+- https://platform.openai.com/docs/guides/function-calling
+- Tools
+- Intro to agents.
 
 ## Week 4
 
-## Day 1
+### Day 1
 
-    - to give back the lecture
+- to give back the lecture
 
-## Day 2
-    - N8n practice with gmail integration.
+### Day 2
+- N8n practice with gmail integration.
 
-## Day 3
-    - RAG practice
-    - simple RAG with n8n
+### Day 3
+- RAG practice
+- simple RAG with n8n
 
-## Day 4
-    - Advanced RAG.
-    - How to improve RAG:
-        - Clean and format the data
-        - Choose a proper vector database
-        - Set splitting settings (what is the best chunking strategy)
-        - Pick the right LLM.
-        - Instructions and prompts
-        - Pick the right embeddings.
+### Day 4
+- Advanced RAG.
+- How to improve RAG:
+    - Clean and format the data
+    - Choose a proper vector database
+    - Set splitting settings (what is the best chunking strategy)
+    - Pick the right LLM.
+    - Instructions and prompts
+    - Pick the right embeddings.
 
-    - Understanding n8n better.
+- Understanding n8n better.
 
-### Week 5 Multi modal agents.
+## Week 5 Multi modal agents.
 
-## Day 1
-    - Recap: AI agents
-    - AI agents concepts: instructions, LLM, tools.
-    - Tool is a code.
-    - Technology is an API
-    - n8n vd copilot.
-    - mcp
-    - Postgre mcp
+### Day 1
+- Recap: AI agents
+- AI agents concepts: instructions, LLM, tools.
+- Tool is a code.
+- Technology is an API
+- n8n vd copilot.
+- mcp
+- Postgre mcp
 
-Day 2
-    - Playwright mcp
-    - browser automation.
-    - Openai Dev day.
-    - embeddings
-    - notebook LLM
-    - n8n
+### Day 2
+- Playwright mcp
+- browser automation.
+- Openai Dev day.
+- embeddings
+- notebook LLM
+- n8n
 
-Day 3
-    - multimodal
-    - image generation with n8n
-    - Human in the loop.
+### Day 3
+- multimodal
+- image generation with n8n
+- Human in the loop.
 
-Day 4
-    - human in the loop and image generation in practice.
+### Day 4
+- human in the loop and image generation in practice.
 
-### Week 6 
+## Week 6
 
-    - Day 1 Intro to ElevenLabs
+### Day 1 Intro to ElevenLabs
 
-Day 2
+### Day 2
 
-    - Multi agent orchestration
-    - Google Sheets integration into n8n.
+- Multi agent orchestration
+- Google Sheets integration into n8n.
+
+### Day 3
+- AI news review
+- fine-tuning continued.
+
+### Day 4
+- Gemini CLI
+
 
 
 
