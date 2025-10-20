@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tic-Tac-Toe — You vs Random AI</title>
+  <style>
+    :root {
+      --bg: #f3f4f6;          /* gray-100 */
+      --panel: #ffffff;       /* white */
+      --accent: #0ea5e9;      /* sky-500 */
+      --accent-2: #6366f1;    /* indigo-500 */
+      --text: #111827;        /* gray-900 */
+      --muted: #6b7280;       /* gray-500 */
+      --win: #10b98133;       /* green translucent */
+      --lose: #ef444433;      /* red translucent */
+      --cell: #f9fafb;        /* light gray */
+      --cell-hover: #f1f5f9;  /* slightly darker */
+      --shadow: 0 4px 12px rgba(0,0,0,.1);
+      --radius: 16px;
+    }
+
+    * { box-sizing: border-box; }
+    html,body { height: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 500 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    .app { width: min(92vw, 480px); }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid #e5e7eb;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 20px;
+    }
+
+    header {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 12px;
+    }
+
+    .title {
+      font-size: 20px; font-weight: 700;
+      display: flex; flex-direction: column;
+    }
+
+    .title small {
+      font-size: 13px; font-weight: 500; color: var(--muted);
+    }
+
+    .status {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .board {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin: 14px 0;
+    }
+
+    .cell {
+      aspect-ratio: 1 / 1;
+      border: 1px solid #d1d5db;
+      border-radius: 12px;
+      background: var(--cell);
+      color: var(--text);
+      font-size: clamp(38px, 8vw, 54px);
+      font-weight: 800;
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+      transition: background .15s, transform .08s;
+      user-select: none;
+    }
+
+    .cell:hover { background: var(--cell-hover); transform: translateY(-1px); }
+    .cell:disabled { cursor: not-allowed; opacity: .8; transform: none; }
+    .cell.win { background: var(--win); }
+    .cell.lose { background: var(--lose); }
+
+    .controls {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 12px; margin-top: 10px; flex-wrap: wrap;
+    }
+
+    .btn {
+      appearance: none; border: none; cursor: pointer;
+      padding: 10px 14px;
+      border-radius: 10px;
+      background: var(--accent);
+      color: white; font-weight: 600;
+      transition: transform .08s, filter .15s;
+    }
+
+    .btn:hover { filter: brightness(1.05); transform: translateY(-1px); }
+
+    .scores {
+      display: flex; gap: 10px; align-items: center;
+      font-size: 13px; background: #f9fafb;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 6px 10px;
+    }
+
+    .dot {
+      width: 8px; height: 8px; border-radius: 999px;
+      display: inline-block; margin-right: 6px;
+    }
+    .dot.x { background: var(--accent); }
+    .dot.o { background: var(--accent-2); }
+  </style>
+</head>
+<body>
+  <main class="app">
+    <div class="card" role="application" aria-label="Tic-Tac-Toe game">
+      <header>
+        <div class="title">
+          Tic-Tac-Toe
+          <small>You (X) vs AI (O)</small>
+        </div>
+        <div id="status" class="status" aria-live="polite">Your move — place an X</div>
+      </header>
+
+      <section class="board" id="board" aria-label="Game board" role="grid">
+        <!-- Cells injected by JS -->
+      </section>
+
+      <div class="controls">
+        <div class="scores" aria-label="Score">
+          <span><span class="dot x"></span> You: <strong id="scoreX">0</strong></span>
+          <span>•</span>
+          <span><span class="dot o"></span> AI: <strong id="scoreO">0</strong></span>
+          <span>•</span>
+          <span>Draws: <strong id="scoreD">0</strong></span>
+        </div>
+        <button class="btn" id="resetBtn">Reset</button>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    (() => {
+      const boardEl = document.getElementById('board');
+      const statusEl = document.getElementById('status');
+      const resetBtn = document.getElementById('resetBtn');
+      const scoreXEl = document.getElementById('scoreX');
+      const scoreOEl = document.getElementById('scoreO');
+      const scoreDEl = document.getElementById('scoreD');
+
+      const X = 'X'; // human
+      const O = 'O'; // AI
+      const WIN_LINES = [
+        [0,1,2],[3,4,5],[6,7,8],
+        [0,3,6],[1,4,7],[2,5,8],
+        [0,4,8],[2,4,6]
+      ];
+
+      let state, cells, gameOver, aiThinking, scores;
+
+      function initBoard() {
+        boardEl.innerHTML = '';
+        cells = [];
+        for (let i = 0; i < 9; i++) {
+          const btn = document.createElement('button');
+          btn.className = 'cell';
+          btn.setAttribute('role', 'gridcell');
+          btn.addEventListener('click', () => handleHumanMove(i));
+          boardEl.appendChild(btn);
+          cells.push(btn);
+        }
+      }
+
+      function newGame() {
+        state = Array(9).fill(null);
+        gameOver = false;
+        aiThinking = false;
+        cells.forEach(c => {
+          c.textContent = '';
+          c.disabled = false;
+          c.classList.remove('win', 'lose');
+        });
+        setStatus("Your move — place an X");
+      }
+
+      function setStatus(msg) { statusEl.textContent = msg; }
+
+      function lockBoard(isLocked) {
+        cells.forEach((c, i) => { if (!state[i]) c.disabled = isLocked; });
+      }
+
+      function handleHumanMove(i) {
+        if (gameOver || aiThinking || state[i]) return;
+        place(i, X);
+        const outcome = evaluate();
+        if (outcome) return endGame(outcome);
+
+        // AI's turn
+        aiThinking = true;
+        setStatus("AI is thinking…");
+        lockBoard(true);
+        setTimeout(() => {
+          aiMove();
+          aiThinking = false;
+          const outcome2 = evaluate();
+          if (outcome2) return endGame(outcome2);
+          setStatus("Your move — place an X");
+          lockBoard(false);
+        }, 400);
+      }
+
+      function place(i, mark) {
+        state[i] = mark;
+        cells[i].textContent = mark;
+        cells[i].disabled = true;
+      }
+
+      function aiMove() {
+        const empties = state
+          .map((v, idx) => v ? null : idx)
+          .filter(v => v !== null);
+        if (empties.length === 0) return;
+        const idx = empties[Math.floor(Math.random() * empties.length)];
+        place(idx, O);
+      }
+
+      function evaluate() {
+        for (const [a,b,c] of WIN_LINES) {
+          if (state[a] && state[a] === state[b] && state[b] === state[c]) {
+            return { type: 'win', winner: state[a], line: [a,b,c] };
+          }
+        }
+        if (state.every(Boolean)) return { type: 'draw' };
+        return null;
+      }
+
+      function endGame(result) {
+        gameOver = true;
+        lockBoard(true);
+        if (result.type === 'draw') {
+          setStatus("It's a draw. Hit Reset to play again.");
+          scores.draws++; scoreDEl.textContent = scores.draws;
+        } else {
+          const isHuman = result.winner === X;
+          result.line.forEach(i => cells[i].classList.add(isHuman ? 'win' : 'lose'));
+          setStatus(isHuman ? "You win! 🎉" : "AI wins! 🤖");
+          if (isHuman) { scores.X++; scoreXEl.textContent = scores.X; }
+          else { scores.O++; scoreOEl.textContent = scores.O; }
+        }
+      }
+
+      function initScores() {
+        scores = { X: 0, O: 0, draws: 0 };
+        scoreXEl.textContent = scores.X;
+        scoreOEl.textContent = scores.O;
+        scoreDEl.textContent = scores.draws;
+      }
+
+      resetBtn.addEventListener('click', newGame);
+
+      initBoard();
+      initScores();
+      newGame();
+    })();
+  </script>
+</body>
+</html>

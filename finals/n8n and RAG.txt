@@ -1,0 +1,26 @@
+In this final. You will be an n8n workflow which will be implement RAG workfow.
+
+You can copy the workflow from
+https://n8n.io/workflows/5010-rag-starter-template-using-simple-vector-stores-form-trigger-and-openai/
+
+You still have access to my n8n server: 
+https://n8n.srv1046399.hstgr.cloud/
+
+If you forgot username/password just tell me, il reset.
+
+For testing you can use sample 'n8n and rag.txt'. But if you want you can use your own information.
+It might work well with PDF as well. TEST it.
+
+1. Implement the workflow, and make it work without errors.
+2. Test the workflow with PDF. does it work?
+https://www.mi.com/global/support/user-guide-pdf/hr-ba/xiaomi-robot-vacuum-e10/
+3. Test the workflow with 'n8n and rag.txt'. Does it work? Show me what sources does it return?
+
+
+--------
+4. ADVANCED
+
+Try uploading multiple different PDF/document. and ask to compare information about them.
+
+
+
