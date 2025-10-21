@@ -1,0 +1,9 @@
+Create an n8n workflow which has a chatbot (agent) which is able to control your google calendar.
+
+This chatbot would allow you to get information about your events.
+Example: "What am i doing next weekend?"
+When u create an event with chatbot, it should always warn you if there is another event at the same time.
+if Event has been created it also should send you a summary through gmail.
+
+The agent should not do any information gathering. 
+If you ask for something it should answer "I cannot help u with that"
