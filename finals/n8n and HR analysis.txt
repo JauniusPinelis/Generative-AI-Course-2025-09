@@ -1,0 +1,27 @@
+Use n8n and AI to solve HR hiring problem.
+
+The workflow will accept a job description and Candidate CV 
+and will perform an analysis if the candidate is suitable for the job.
+
+The flow:
+
+1. Create a form which would allow to submit 4 things:
+ - Job title
+ - Job description
+ - Allows to upload a CV (to PDF)
+
+2. Upload CV to Google Drive
+3. Downloads CV from Google Drive for analysis.
+
+4. Extracts the data from the CV.
+
+5. Sends the 'CV data' and 'job description' to AI agent which creates a report for this 
+and gives 'job compactability' score which can be from 1 to 10. Provides reasoning.
+Generates a report with this data.
+
+6. The report gets placed into Google Drive for HR to analyse later.
+
+7. If the score < 6, another agent generates an generic apology letter based on job description 
+and sends the applicant an email. (only test with your CV of course)
+
+

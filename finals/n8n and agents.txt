@@ -7,3 +7,11 @@ if Event has been created it also should send you a summary through gmail.
 
 The agent should not do any information gathering. 
 If you ask for something it should answer "I cannot help u with that"
+
+Extra:
+
+Implement "Agent as a tool pattern"
+where instead of calling "gmail" tool directly. 
+The calls another "gmail agent" and that agent does the "email formatting" and sends the email.
+
+N8N supports it:
